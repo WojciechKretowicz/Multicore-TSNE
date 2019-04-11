@@ -46,6 +46,7 @@ class CMakeBuild(build_ext):
         # Run cmake
         build_type = 'Debug' if self.debug else 'Release'
         if 0 != execute(['cmake',
+                         '-DCMAKE_GENERATOR_PLATFORM=x64',
                          '-DCMAKE_BUILD_TYPE={}'.format(build_type),
                          '-DCMAKE_VERBOSE_MAKEFILE={}'.format(int(self.verbose)),
                          "-DCMAKE_LIBRARY_OUTPUT_DIRECTORY='{}'".format(EXT_DIR),
