@@ -88,7 +88,7 @@ class MulticoreTSNE:
 
         self.ffi = cffi.FFI()
         self.ffi.cdef(
-            """void tsne_run_double(double* X, int N, int D, double* Y,
+            """void tsne_run_double(double* X, int N, int D, double* Y, double* steps,
                                     int no_dims, double perplexity, double theta,
                                     int num_threads, int max_iter, int n_iter_early_exag,
                                     int random_state, bool init_from_Y, int verbose,

@@ -9,7 +9,7 @@ The output was:
 Microsoft (R) Build Engine 15.9.21+g9802d43bc3 dla platformy .NET Framework
 Copyright (C) Microsoft Corporation. Wszelkie prawa zastrze¾one.
 
-Kompilacja rozpocz©ˆa si© 2019-04-11 13:46:51.
+Kompilacja rozpocz©ˆa si© 2019-04-11 14:00:57.
 Projekt "C:\Users\Admin\Desktop\Informatyka\Multicore-TSNE\build\temp.win-amd64-3.6\Release\CMakeFiles\3.14.0\CompilerIdCXX\CompilerIdCXX.vcxproj" w w©«le 1 (domy˜lne elementy docelowe).
 PrepareForBuild:
   Tworzenie katalogu "Debug\".
@@ -35,7 +35,7 @@ Kompilacja powiodˆa si©.
     Ostrze¾enia: 0
     Liczba bˆ©d¢w: 0
 
-Czas, kt¢ry upˆyn¥ˆ: 00:00:00.97
+Czas, kt¢ry upˆyn¥ˆ: 00:00:00.96
 
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -47,7 +47,7 @@ The CXX compiler identification is MSVC, found in "C:/Users/Admin/Desktop/Inform
 Determining if the CXX compiler works passed with the following output:
 Change Dir: C:/Users/Admin/Desktop/Informatyka/Multicore-TSNE/build/temp.win-amd64-3.6/Release/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/BuildTools/MSBuild/15.0/Bin/MSBuild.exe cmTC_73275.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:m 
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/BuildTools/MSBuild/15.0/Bin/MSBuild.exe cmTC_fe160.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:m 
 Microsoft (R) Build Engine 15.9.21+g9802d43bc3 dla platformy .NET Framework
 Copyright (C) Microsoft Corporation. Wszelkie prawa zastrzeÅ¼one.
 
@@ -55,15 +55,15 @@ Copyright (C) Microsoft Corporation. Wszelkie prawa zastrzeÅ¼one.
   Copyright (C) Microsoft Corporation. Wszystkie prawa zastrzeÅ¼one.
   
   testCXXCompiler.cxx
-  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_73275.dir\Debug\\" /Fd"cmTC_73275.dir\Debug\vc141.pdb" /Gd /TP /errorReport:queue "C:\Users\Admin\Desktop\Informatyka\Multicore-TSNE\build\temp.win-amd64-3.6\Release\CMakeFiles\CMakeTmp\testCXXCompiler.cxx"
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_fe160.dir\Debug\\" /Fd"cmTC_fe160.dir\Debug\vc141.pdb" /Gd /TP /errorReport:queue "C:\Users\Admin\Desktop\Informatyka\Multicore-TSNE\build\temp.win-amd64-3.6\Release\CMakeFiles\CMakeTmp\testCXXCompiler.cxx"
   
-  cmTC_73275.vcxproj -> C:\Users\Admin\Desktop\Informatyka\Multicore-TSNE\build\temp.win-amd64-3.6\Release\CMakeFiles\CMakeTmp\Debug\cmTC_73275.exe
+  cmTC_fe160.vcxproj -> C:\Users\Admin\Desktop\Informatyka\Multicore-TSNE\build\temp.win-amd64-3.6\Release\CMakeFiles\CMakeTmp\Debug\cmTC_fe160.exe
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: C:/Users/Admin/Desktop/Informatyka/Multicore-TSNE/build/temp.win-amd64-3.6/Release/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/BuildTools/MSBuild/15.0/Bin/MSBuild.exe cmTC_78026.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:m 
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/BuildTools/MSBuild/15.0/Bin/MSBuild.exe cmTC_ec233.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:m 
 Microsoft (R) Build Engine 15.9.21+g9802d43bc3 dla platformy .NET Framework
 Copyright (C) Microsoft Corporation. Wszelkie prawa zastrzeÅ¼one.
 
@@ -71,9 +71,9 @@ Copyright (C) Microsoft Corporation. Wszelkie prawa zastrzeÅ¼one.
   Copyright (C) Microsoft Corporation. Wszystkie prawa zastrzeÅ¼one.
   
   CMakeCXXCompilerABI.cpp
-  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_78026.dir\Debug\\" /Fd"cmTC_78026.dir\Debug\vc141.pdb" /Gd /TP /errorReport:queue "C:\Anaconda\Library\share\cmake-3.14\Modules\CMakeCXXCompilerABI.cpp"
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_ec233.dir\Debug\\" /Fd"cmTC_ec233.dir\Debug\vc141.pdb" /Gd /TP /errorReport:queue "C:\Anaconda\Library\share\cmake-3.14\Modules\CMakeCXXCompilerABI.cpp"
   
-  cmTC_78026.vcxproj -> C:\Users\Admin\Desktop\Informatyka\Multicore-TSNE\build\temp.win-amd64-3.6\Release\CMakeFiles\CMakeTmp\Debug\cmTC_78026.exe
+  cmTC_ec233.vcxproj -> C:\Users\Admin\Desktop\Informatyka\Multicore-TSNE\build\temp.win-amd64-3.6\Release\CMakeFiles\CMakeTmp\Debug\cmTC_ec233.exe
 
 
 
@@ -81,7 +81,7 @@ Copyright (C) Microsoft Corporation. Wszelkie prawa zastrzeÅ¼one.
 Detecting CXX [] compiler features compiled with the following output:
 Change Dir: C:/Users/Admin/Desktop/Informatyka/Multicore-TSNE/build/temp.win-amd64-3.6/Release/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/BuildTools/MSBuild/15.0/Bin/MSBuild.exe cmTC_e04a7.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:m 
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2017/BuildTools/MSBuild/15.0/Bin/MSBuild.exe cmTC_b3179.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:m 
 Microsoft (R) Build Engine 15.9.21+g9802d43bc3 dla platformy .NET Framework
 Copyright (C) Microsoft Corporation. Wszelkie prawa zastrzeÅ¼one.
 
@@ -89,9 +89,9 @@ Copyright (C) Microsoft Corporation. Wszelkie prawa zastrzeÅ¼one.
   Copyright (C) Microsoft Corporation. Wszystkie prawa zastrzeÅ¼one.
   
   feature_tests.cxx
-  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_e04a7.dir\Debug\\" /Fd"cmTC_e04a7.dir\Debug\vc141.pdb" /Gd /TP /errorReport:queue "C:\Users\Admin\Desktop\Informatyka\Multicore-TSNE\build\temp.win-amd64-3.6\Release\CMakeFiles\feature_tests.cxx"
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_b3179.dir\Debug\\" /Fd"cmTC_b3179.dir\Debug\vc141.pdb" /Gd /TP /errorReport:queue "C:\Users\Admin\Desktop\Informatyka\Multicore-TSNE\build\temp.win-amd64-3.6\Release\CMakeFiles\feature_tests.cxx"
   
-  cmTC_e04a7.vcxproj -> C:\Users\Admin\Desktop\Informatyka\Multicore-TSNE\build\temp.win-amd64-3.6\Release\CMakeFiles\CMakeTmp\Debug\cmTC_e04a7.exe
+  cmTC_b3179.vcxproj -> C:\Users\Admin\Desktop\Informatyka\Multicore-TSNE\build\temp.win-amd64-3.6\Release\CMakeFiles\CMakeTmp\Debug\cmTC_b3179.exe
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
