@@ -14,6 +14,7 @@ MulticoreTSNE.egg-info/requires.txt
 MulticoreTSNE.egg-info/top_level.txt
 MulticoreTSNE/tests/__init__.py
 MulticoreTSNE/tests/test_base.py
+TraceTSNE/__init__.py
 multicore_tsne/CMakeLists.txt
 multicore_tsne/splittree.cpp
 multicore_tsne/splittree.h
