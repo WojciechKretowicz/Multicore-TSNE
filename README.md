@@ -4,9 +4,12 @@ This is a multicore modification of [Barnes-Hut t-SNE](https://github.com/lvdmaa
 
 <center><img src="mnist-tsne.png" width="512"></center> 
 
+# Trace TSNE
+
 This is an extension (fork) of the https://github.com/DmitryUlyanov/Multicore-TSNE.git.
-This implementation allows you to make a video presenting the process of gradient descent of TSNE algorithm - minimalization of Kullback - Leiblera divergence.
-This can tell a lot about the final result of TSNE, in example it can tell if the cluster is a "false cluster".
+This implementation allows you to make a video presenting the process of gradient descent of TSNE algorithm - minimalization of Kullback - Leibler divergence.
+This can tell a lot about the final result of TSNE, in example it can explain if the cluster is a "false cluster".
+In this moment it is a fully working prototype. I am focused on optimalization of making video process.
 
 # What to expect
 
@@ -45,10 +48,6 @@ This table shows a relative to 1 core speed-up when using `n` cores.
 | 2             | 1.54x     | 1.05x    |
 | 4             | 2.6x      | 1.2x     |
 | 8             | 5.6x      | 1.65x    |
-
-# Tracing TSNE
-
-This extension to the original package let you make a video from the fitted MulticoreTSNE object. In this moment it is a fully working prototype that will be optimized.
 
 # How to use
 
