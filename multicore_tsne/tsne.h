@@ -19,7 +19,7 @@ template <class treeT, double (*dist_fn)( const DataPoint&, const DataPoint&)>
 class TSNE
 {
 public:
-    void run(double* X, int N, int D, double* Y,double* steps, // nie wiem co robie
+    void run(double* X, int N, int D, double* Y,double* steps,
                int no_dims = 2,
                double perplexity = 30, double theta = .5,
                int num_threads = 1, int max_iter = 1000, int n_iter_early_exag = 250,

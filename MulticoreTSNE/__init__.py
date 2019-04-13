@@ -128,7 +128,7 @@ class MulticoreTSNE:
         cffi_X = self.ffi.cast('double*', X.ctypes.data)
         cffi_Y = self.ffi.cast('double*', Y.ctypes.data)
 
-        cffi_steps = self.ffi.cast('double*', steps.ctypes.data)  # nie wiem co robie
+        cffi_steps = self.ffi.cast('double*', steps.ctypes.data)  # creating a variable for steps
 
         final_error = np.array(0, dtype=float)
         cffi_final_error = self.ffi.cast('double*', final_error.ctypes.data)
@@ -136,7 +136,7 @@ class MulticoreTSNE:
         t = FuncThread(self.C.tsne_run_double,
                        cffi_X, N, D,
                        cffi_Y,
-                       cffi_steps,  # nie wiem co robie
+                       cffi_steps,
                        self.n_components,
                        self.perplexity, self.angle, self.n_jobs, self.n_iter, self.n_iter_early_exag,
                        self.random_state, init_from_Y, self.verbose, self.early_exaggeration,

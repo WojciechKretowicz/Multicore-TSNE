@@ -1,8 +1,12 @@
-# Multicore t-SNE [![Build Status](https://travis-ci.org/DmitryUlyanov/Multicore-TSNE.svg?branch=master)](https://travis-ci.org/DmitryUlyanov/Multicore-TSNE)
+# Multicore t-SNE
 
 This is a multicore modification of [Barnes-Hut t-SNE](https://github.com/lvdmaaten/bhtsne) by L. Van der Maaten with python and Torch CFFI-based wrappers. This code also works **faster than sklearn.TSNE** on 1 core.
 
-<center><img src="mnist-tsne.png" width="512"></center>
+<center><img src="mnist-tsne.png" width="512"></center> 
+
+This is an extension (fork) of the https://github.com/DmitryUlyanov/Multicore-TSNE.git.
+This implementation allows you to make a video presenting the process of gradient descent of TSNE algorithm - minimalization of Kullback - Leiblera divergence.
+This can tell a lot about the final result of TSNE, in example it can tell if the cluster is a "false cluster".
 
 # What to expect
 
@@ -42,28 +46,28 @@ This table shows a relative to 1 core speed-up when using `n` cores.
 | 4             | 2.6x      | 1.2x     |
 | 8             | 5.6x      | 1.65x    |
 
+# Tracing TSNE
+
+This extension to the original package let you make a video from the fitted MulticoreTSNE object. In this moment it is a fully working prototype that will be optimized.
+
 # How to use
 
 Python and torch wrappers are available.
 
 ## Python
-### Install
-
-#### Directly from pypi
-`pip install MulticoreTSNE`
+### Install`
 
 #### From source
 
 Make sure `cmake` is installed on your system, and you will also need a sensible C++ compiler, such as `gcc` or `llvm-clang`. On macOS, you can get both via [homebrew](https://brew.sh/).
+You alse need the ffmpeg program added to your Path variable.
 
 To install the package, please do:
 ```
-git clone https://github.com/DmitryUlyanov/Multicore-TSNE.git
+git clone https://github.com/WojciechKretowicz/Trace-TSNE.git
 cd Multicore-TSNE/
-pip install .
+python setup.py install
 ```
-
-Tested with both Python 2.7 and 3.6 (conda) and Ubuntu 14.04.
 
 ### Run
 
@@ -144,22 +148,7 @@ Inherited from [original repo's license](https://github.com/lvdmaaten/bhtsne).
 
 # Future work
 
-- Allow other types than double
-- Improve step 2 performance (possible)
+- Optimalization of the process of making a video
 
-# Citation
-
-Please cite this repository if it was useful for your research:
-
-```
-@misc{Ulyanov2016,
-  author = {Ulyanov, Dmitry},
-  title = {Multicore-TSNE},
-  year = {2016},
-  publisher = {GitHub},
-  journal = {GitHub repository},
-  howpublished = {\url{https://github.com/DmitryUlyanov/Multicore-TSNE}},
-}
-```
 
 Of course, do not forget to cite [L. Van der Maaten's paper](http://lvdmaaten.github.io/publications/papers/JMLR_2014.pdf)
