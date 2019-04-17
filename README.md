@@ -3,6 +3,7 @@
 This is a multicore modification of [Barnes-Hut t-SNE](https://github.com/lvdmaaten/bhtsne) by L. Van der Maaten with python CFFI-based wrapper. This code also works **faster than sklearn.TSNE** on 1 core.
 
 <center><img src="mnist-tsne.png" width="512"></center> 
+
 # Trace TSNE
 
 This is an extension (fork) of the https://github.com/DmitryUlyanov/Multicore-TSNE.git.
