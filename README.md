@@ -54,7 +54,7 @@ This table shows a relative to 1 core speed-up when using `n` cores.
 Python and torch wrappers are available.
 
 ## Python
-### Install`
+### Install
 
 #### From source
 
@@ -64,7 +64,7 @@ You alse need the ffmpeg program added to your Path variable.
 To install the package, please do:
 ```
 git clone https://github.com/WojciechKretowicz/Trace-TSNE.git
-cd Multicore-TSNE/
+cd Trace-TSNE/
 python setup.py install
 ```
 
