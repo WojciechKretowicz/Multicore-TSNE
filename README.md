@@ -13,6 +13,10 @@ In this moment it is a fully working prototype. I am focused on optimalization o
 
 # What to expect
 
+The package contains two classes. First is MulticoreTSNE that is generally the same as in the DmitryUlyanov/Multicore-TSNE with some extensions to make it compatible with the second class. The second class is the TraceTSNE that is used for making video of gradient descent. This is the major difference between WojciechKretowicz/Trace-TSNE and the DmitryUlyanov/Multicore-TSNE.
+
+It is worth mentioning that the class MulticoreTSNE in this package has exactly the same efficiency as in the original. However here you can use it for further visualization.
+
 Barnes-Hut t-SNE is done in two steps.
 
 - First step: an efficient data structure for nearest neighbours search is built and used to compute probabilities. This can be done in parallel for each point in the dataset, this is why we can expect a good speed-up by using more cores.
@@ -51,8 +55,6 @@ This table shows a relative to 1 core speed-up when using `n` cores.
 
 # How to use
 
-Python and torch wrappers are available.
-
 ## Python
 ### Install
 
@@ -74,6 +76,7 @@ You can use it as a near drop-in replacement for [sklearn.manifold.TSNE](http://
 
 ```
 from MulticoreTSNE import MulticoreTSNE as TSNE
+from TraceTSNE import TraceTSNE
 
 tsne = TSNE(n_jobs=4)
 Y = tsne.fit_transform(X)
