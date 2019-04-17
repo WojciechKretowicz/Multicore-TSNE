@@ -1,6 +1,6 @@
 # Multicore t-SNE
 
-This is a multicore modification of [Barnes-Hut t-SNE](https://github.com/lvdmaaten/bhtsne) by L. Van der Maaten with python and Torch CFFI-based wrappers. This code also works **faster than sklearn.TSNE** on 1 core.
+This is a multicore modification of [Barnes-Hut t-SNE](https://github.com/lvdmaaten/bhtsne) by L. Van der Maaten with python CFFI-based wrapper. This code also works **faster than sklearn.TSNE** on 1 core.
 
 <center><img src="mnist-tsne.png" width="512"></center> 
 
@@ -77,6 +77,9 @@ from MulticoreTSNE import MulticoreTSNE as TSNE
 
 tsne = TSNE(n_jobs=4)
 Y = tsne.fit_transform(X)
+
+trace = TraceTSNE()
+trace.transform(tsne)
 ```
 
 Please refer to [sklearn TSNE manual](http://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html) for parameters explanation.
@@ -105,41 +108,12 @@ trace.transform(tsne)
 
 ```
 
-### Test
-
-You can test it on MNIST dataset with the following command:
-
-```
-python MulticoreTSNE/examples/test.py <n_jobs>
-```
-
 #### Note on jupyter use
 To make the computation log visible in jupyter please install `wurlitzer` (`pip install wurlitzer`) and execute this line in any cell beforehand:
 ```
 %load_ext wurlitzer
 ```
 Memory leakages are possible if you interrupt the process. Should be OK if you let it run until the end.
-
-## Torch
-
-To install execute the following command from repository folder:
-```
-luarocks make torch/tsne-1.0-0.rockspec
-```
-or
-
-```
-luarocks install https://raw.githubusercontent.com/DmitryUlyanov/Multicore-TSNE/master/torch/tsne-1.0-0.rockspec
-```
-
-You can run t-SNE like that:
-```
-tsne = require 'tsne'
-
-Y = tsne(X, n_components, perplexity, n_iter, angle, n_jobs)
-```
-
-`torch.DoubleTensor` type only supported for now.
 
 # License
 
