@@ -54,13 +54,13 @@ class TraceTSNE:
             plot.set_title(str(i + 1), fontsize=30)
             plot.axis('off')
             plot = plot.get_figure()
-            plot.savefig("tmp"+str(i + 1))
+            plot.savefig(".!.tmp"+str(i + 1))
             plot.clf()
 
 	# checking if the output file already exists
         if os.path.isfile(self.output_file):
             for i in range(TSNE.n_iter):
-                os.remove("tmp" + str(i + 1) + ".png")
+                os.remove(".!.tmp" + str(i + 1) + ".png")
             raise Exception('Such file already exist!')
 	
 	# making a video from charts
@@ -68,4 +68,4 @@ class TraceTSNE:
 	
 	# deleting charts
         for i in range(TSNE.n_iter):
-            os.remove("tmp"+str(i + 1)+".png")
+            os.remove(".!.tmp"+str(i + 1)+".png")
