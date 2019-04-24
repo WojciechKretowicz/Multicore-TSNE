@@ -60,8 +60,7 @@ This table shows a relative to 1 core speed-up when using `n` cores.
 
 #### From source
 
-Make sure `cmake` is installed on your system, and you will also need a sensible C++ compiler, such as `gcc` or `llvm-clang`. On macOS, you can get both via [homebrew](https://brew.sh/).
-You alse need the ffmpeg program added to your Path variable.
+Make sure `cmake` is installed on your system, and you will also need a sensible C++ compiler, such as `gcc` or `llvm-clang`. You also need the `ffmpeg` program installed and added to your Path variable.
 
 To install the package, please do:
 ```
